@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body{
+  background-color: rgb(167, 192, 251);
+font-family: 'Poppins', sans-serif;
+}
+.container{
+
+  width: 95%;
+  height: auto;
+  margin: 30px auto;
+background-color: white;
+border-radius: 4px;
+}
+.main{
+  padding: 10px 30px;
+}
+navigation{
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-bottom: 1px solid black;
+}
+navigation img{
+  width: 50px;
+  height: 50px;
+}
+.menu{
+  float: right;
+  display: none;
+  padding: 5px;
+}
+.menu a{
+  text-decoration: none;
+  color: black;
+}
+.menu a:hover{
+  color: brown;
+}
+.nav-bar ul li{
+
+  list-style-type: none;
+display: inline-block;
+padding: 10px;
+overflow: hidden;
+}
+.nav-bar ul li a{
+  color: black;
+  text-decoration: none;
+}
+.nav-bar ul li a:hover{
+  color: brown;
+}
+.hero-section{
+
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(4,1fr);
+ grid-template-rows: 350px 250px;
+}
+.box{
+
+color: black;
+  position: relative;
+  box-shadow: 5px 5px 5px rgba(167, 192, 251, .4);
+}
+.box img{
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .8;
+}
+.box a{
+  text-decoration: none;
+}
+.box p, h3{
+  z-index: 5;
+  width: 50%;
+  margin: auto;
+  position: absolute;
+  left: 20px;
+  color: white;
+}
+.box p{
+  top: 20px;
+  text-transform: uppercase;
+}
+.box h3{
+  top: 50px;
+}
+.box  h5{
+  background-color: white;
+  padding: 10px;
+  left: 20px;
+ position: absolute;
+  bottom: 20px;
+  box-shadow: 2px 2px 5px;
+}
+
+.box1 {
+        grid-column: 1/ span 2 ;
+      grid-row: 1;
+    }
+    .box1 a, .box2 a, .box5 a, .box6 a{
+      color: rgb(181, 165, 254);
+    }
+    .box2 {
+        grid-column:  ;
+        grid-row:1  ;
+    }
+
+    .box3 {
+        grid-column:  ;
+        grid-row: 1 ;
+    }
+    .box3 a, .box4 a {
+      color: rgb(254, 172, 165);
+    }
+    .box4 {
+        grid-column: 1  ;
+        grid-row: 2 ;
+    }
+
+.box5{
+  grid-column: 2;
+    grid-row: 2;
+}
+.box6{
+  grid-column: 3/ span 2;
+  grid-row: 2;
+}
+
+@media screen and (max-width: 700px){
+.container{
+  padding: 6px;
+}
+.menu{
+  display: block;
+}
+
+.nav-bar{
+  display: none;
+}
+  .hero-section{
+    display: flex;
+    flex-wrap: wrap;
+   flex-direction: column;
+
+  }
+  .box{
+    height: 80%;
+    width: 80%;
+    margin: auto;
+        padding: 8px 0px;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, .2);
+
+  }
+}
+@media screen and (max-width: 500px){
+
+  .box{
+    height: 60%;
+    width: 100%;
+
+  }
+}
+@media screen and (max-width: 300px){
+
+
+  .box{
+    width: 100%;
+    height: 50%;
+
+  }
+}
