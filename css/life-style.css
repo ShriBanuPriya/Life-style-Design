@@ -69,10 +69,13 @@ color: black;
   height: 100%;
   object-fit: cover;
   opacity: .8;
+
 }
+
 .box a{
   text-decoration: none;
 }
+
 .box p, h3{
   z-index: 5;
   width: 50%;
@@ -80,6 +83,7 @@ color: black;
   position: absolute;
   left: 20px;
   color: white;
+
 }
 .box p{
   top: 20px;
@@ -94,7 +98,7 @@ color: black;
   left: 20px;
  position: absolute;
   bottom: 20px;
-  box-shadow: 2px 2px 5px;
+box-shadow: 4px 4px 20px rgba(167, 192, 251, .4);
 }
 
 .box1 {
@@ -103,6 +107,9 @@ color: black;
     }
     .box1 a, .box2 a, .box5 a, .box6 a{
       color: rgb(181, 165, 254);
+    }
+    .box1 a:hover, .box2 a:hover, .box5 a:hover, .box6 a:hover{
+      color: rgba(181, 165, 254, .8);
     }
     .box2 {
         grid-column:  ;
@@ -115,6 +122,9 @@ color: black;
     }
     .box3 a, .box4 a {
       color: rgb(254, 172, 165);
+    }
+    .box3 a:hover, .box4 a:hover {
+      color: rgba(254, 172, 165, .8);
     }
     .box4 {
         grid-column: 1  ;
